@@ -10,6 +10,11 @@ scoreboard objectives add boat.t_minutes dummy
 scoreboard objectives add boat.t_seconds dummy
 scoreboard objectives add boat.t_ms dummy
 scoreboard objectives add boat.show_sector_time dummy
+scoreboard objectives add boat.show_deltas dummy
+scoreboard objectives add boat.best_lap_fc dummy
+scoreboard objectives add boat.best_lap_lv dummy
+scoreboard objectives add boat.best_lap_ef dummy
+scoreboard objectives add boat.last_lap dummy
 
 # dummy objectives for AFK detection
 scoreboard objectives add afk.x0 dummy
@@ -37,4 +42,10 @@ scoreboard players set 20 consts 20
 scoreboard players set 50 consts 50
 scoreboard players set 72000 consts 72000
 
-# 
+# racetrack records
+# FCorp International Circuit: 1:19.2
+scoreboard players set IceBoatRecords boat.best_lap_fc 1584 
+# Lago Verde Speedway: 1:30.15
+scoreboard players set IceBoatRecords boat.best_lap_lv 1803
+# Earthflax Tower Drift Course: Not yet set
+scoreboard players set IceBoatRecords boat.best_lap_ef 72000
