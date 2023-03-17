@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 6,
-    "description": "A pack for scoreboard and racetrack helper functions."
+    "pack_format": 13,
+    "description": "The core datapack of Ice Boat SMP."
   }
 }

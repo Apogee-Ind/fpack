@@ -1,0 +1,12 @@
+{
+    "type": "fpack:earthflax",
+    "generator": {
+        "type": "noise",
+        "seed": 45782346,
+        "biome_source": {
+            "type": "multi_noise",
+            "preset": "minecraft:overworld"
+        },
+        "settings": "minecraft:overworld"
+    }
+  }
