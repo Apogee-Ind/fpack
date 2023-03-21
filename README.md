@@ -1,13 +1,18 @@
 # fpack
-Functions for ice boat racetrack lap timer
+Datapack powering custom dimensions of the Ice Boat SMP.
 
-Contained in this datapack:
-- lap timer (requires use of the sector timers, but not of track limits)
-- sector timers, for a racetrack divided into 3 sectors
-- track limits detection (will delete your laptime when activated)
-- boat particle trails
-- scoreboard objective for hours since death
+If you were following this repo for the ice boat racing functions, you can safely delete the `dimension` and `dimension_type` folders in `data/fpack` and the `worldgen` folder in `data/minecraft`.
 
-Only 1 ticking function is included, it is used to calculate hours since death using the game's builtin time since death statistic.
-Everything else must be activated using `/execute ... run` via a command block. You will need to enable command blocks and put yourself into creative to place/edit them.
-Most of the functions have a commented line with the command needed in the command block to run them. For ones with volumetric selector arguments, set the volume to encompass the tripwire over the racetrack.
+## Features:
+1. Six custom dimensions, including 5 player dimensions (for preservation of our old pre-1.17 bases) and an auxiliary End dimension for dragon fights.
+2. Integrated AFK detector based on Vanilla Tweaks
+3. Custom scoreboard for tracking hours since death
+4. Functions for ice boat racetrack operation (lap timer, sectors, track limits detection)
+
+## New in Version 0.13 (for Minecraft 1.19.4)
+1. Lap deltas: game will now display your delta from the previous lap above your hotbar when you complete a lap
+2. Variable sector count: the expected sector count is now controlled by the calling command block, meaning you can have an arbitrary number
+3. Added AFK detector
+4. Hours since death scoreboard will no longer include AFK time
+5. Removed ticking functions in favor of `schedule`. The hours since death scoreboard now updates every second.
+
