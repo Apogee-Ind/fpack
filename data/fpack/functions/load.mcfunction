@@ -1,5 +1,4 @@
 # dummy objectives for Ice Boat Racetrack operation
-scoreboard objectives add boat.valid_sector dummy
 scoreboard objectives add boat.valid_lap dummy
 scoreboard objectives add boat.sector_counter dummy
 scoreboard objectives add boat.lap_t0 dummy
@@ -9,12 +8,14 @@ scoreboard objectives add boat.t1 dummy
 scoreboard objectives add boat.t_minutes dummy
 scoreboard objectives add boat.t_seconds dummy
 scoreboard objectives add boat.t_ms dummy
+scoreboard objectives add boat.delta dummy
 scoreboard objectives add boat.show_sector_time dummy
 scoreboard objectives add boat.show_deltas dummy
 scoreboard objectives add boat.best_lap_fc dummy
 scoreboard objectives add boat.best_lap_lv dummy
 scoreboard objectives add boat.best_lap_ef dummy
 scoreboard objectives add boat.last_lap dummy
+scoreboard objectives add boat.at_racetrack dummy
 
 # dummy objectives for AFK detection
 scoreboard objectives add afk.x0 dummy
@@ -41,6 +42,7 @@ scoreboard players set 1200 consts 1200
 scoreboard players set 20 consts 20
 scoreboard players set 50 consts 50
 scoreboard players set 72000 consts 72000
+scoreboard players set 0 consts 0
 
 # racetrack records
 # FCorp International Circuit: 1:19.2
