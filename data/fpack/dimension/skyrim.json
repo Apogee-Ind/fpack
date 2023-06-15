@@ -1,11 +1,11 @@
 {
-    "type": "minecraft:overworld",
+    "type": "fpack:skyrim",
     "generator": {
         "type": "noise",
         "seed": 67,
         "biome_source": {
-            "type": "multi_noise",
-            "preset": "minecraft:overworld"
+            "type": "minecraft:fixed",
+            "biome": "minecraft:deep_frozen_ocean"
         },
         "settings": "minecraft:overworld"
     }
