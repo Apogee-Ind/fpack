@@ -1,6 +1,7 @@
 {
     "values": [
         "fpack:load",
-        "fpack:second"
+        "fpack:second",
+        "fpack:threeticks"
     ]
 }

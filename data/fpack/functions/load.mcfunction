@@ -36,6 +36,9 @@ scoreboard objectives add tsd dummy
 scoreboard objectives add tsd.hours dummy
 scoreboard objectives setdisplay list tsd.hours
 
+# dummy objectives for XP bottling
+scoreboard objectives add xp.count xp
+
 # constants
 scoreboard objectives add consts dummy
 scoreboard players set 1200 consts 1200
@@ -43,6 +46,7 @@ scoreboard players set 20 consts 20
 scoreboard players set 50 consts 50
 scoreboard players set 72000 consts 72000
 scoreboard players set 0 consts 0
+scoreboard players set 8 consts 8
 
 # racetrack records
 # FCorp International Circuit: 1:19.2
