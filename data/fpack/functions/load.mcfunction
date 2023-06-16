@@ -28,7 +28,7 @@ scoreboard objectives add afk.counter dummy
 
 team add afk.afk_team "AFK Players"
 team modify afk.afk_team color dark_aqua
-team modify afk.afk_team prefix "[AFK]"
+team modify afk.afk_team prefix "[AFK] "
 
 # dummy objectives for death tracking
 scoreboard objectives add tsd.ticks minecraft.custom:minecraft.time_since_death
