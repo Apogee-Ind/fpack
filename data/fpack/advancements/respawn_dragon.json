@@ -1,0 +1,105 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_crystal"
+        },
+        "title": "Test Dragon Respawn Advancement",
+        "description": "If this appears, you successfully triggered the advancement.",
+        "show_toast": false,
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:end",
+    "criteria": {
+        "placed_end_crystal_1": {
+            "trigger": "minecraft:summoned_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:end_crystal",
+                            "location": {
+                                "dimension": "fpack:end_2",
+                                "position": {
+                                    "x": 0.5,
+                                    "y": 61,
+                                    "z": 3.5
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "placed_end_crystal_2": {
+            "trigger": "minecraft:summoned_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:end_crystal",
+                            "location": {
+                                "dimension": "fpack:end_2",
+                                "position": {
+                                    "x": -2.5,
+                                    "y": 61,
+                                    "z": 0.5
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "placed_end_crystal_3": {
+            "trigger": "minecraft:summoned_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:end_crystal",
+                            "location": {
+                                "dimension": "fpack:end_2",
+                                "position": {
+                                    "x": 0.5,
+                                    "y": 61,
+                                    "z": -2.5
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "placed_end_crystal_4": {
+            "trigger": "minecraft:summoned_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:end_crystal",
+                            "location": {
+                                "dimension": "fpack:end_2",
+                                "position": {
+                                    "x": 3.5,
+                                    "y": 61,
+                                    "z": 0.5
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "fpack:dragon_fight"
+    }
+}
