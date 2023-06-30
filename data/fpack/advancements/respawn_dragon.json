@@ -5,10 +5,12 @@
         },
         "title": "Test Dragon Respawn Advancement",
         "description": "If this appears, you successfully triggered the advancement.",
+        "frame": "goal",
         "show_toast": false,
-        "announce_to_chat": true
+        "announce_to_chat": true,
+        "hidden": false
     },
-    "parent": "minecraft:end",
+    "parent": "minecraft:end/root",
     "criteria": {
         "placed_end_crystal_1": {
             "trigger": "minecraft:summoned_entity",
