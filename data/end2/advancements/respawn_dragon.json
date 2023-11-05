@@ -10,7 +10,7 @@
         "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "minecraft:end/root",
+    "parent": "end2:visit_end2",
     "criteria": {
         "placed_end_crystal_1": {
             "trigger": "minecraft:item_used_on_block",

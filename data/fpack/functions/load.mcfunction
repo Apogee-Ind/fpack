@@ -9,8 +9,8 @@ scoreboard objectives add boat.t_minutes dummy
 scoreboard objectives add boat.t_seconds dummy
 scoreboard objectives add boat.t_ms dummy
 scoreboard objectives add boat.delta dummy
-scoreboard objectives add boat.show_sector_time dummy
-scoreboard objectives add boat.show_deltas dummy
+scoreboard objectives add boat.show_sector_time trigger
+scoreboard objectives add boat.show_deltas trigger
 scoreboard objectives add boat.best_lap_fc dummy
 scoreboard objectives add boat.best_lap_lv dummy
 scoreboard objectives add boat.best_lap_ef dummy
@@ -40,6 +40,11 @@ scoreboard objectives setdisplay list tsd.hours
 
 # dummy objectives for XP bottling
 scoreboard objectives add xp.count xp
+
+# dummy objectives for End Hub
+scoreboard objectives add show_tp_messages trigger
+scoreboard objectives add dim.last_visited dummy
+scoreboard players set @a dim.last_visited 0
 
 # constants
 scoreboard objectives add consts dummy
