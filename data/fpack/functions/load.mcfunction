@@ -33,7 +33,7 @@ team add afk.active_team "Active Players"
 team modify afk.active_team color green
 
 # dummy objectives for death tracking
-scoreboard objectives add tsd.ticks minecraft.custom:minecraft.time_since_death
+scoreboard objectives add tsd.seconds dummy
 scoreboard objectives add tsd dummy
 scoreboard objectives add tsd.hours dummy
 scoreboard objectives setdisplay list tsd.hours
@@ -44,7 +44,6 @@ scoreboard objectives add xp.count xp
 # dummy objectives for End Hub
 scoreboard objectives add show_tp_messages trigger
 scoreboard objectives add dim.last_visited dummy
-scoreboard players set @a dim.last_visited 0
 
 # dragon fight setup
 bossbar add end2:dragon_fight {"text": "Ender Dragon"}
@@ -57,19 +56,7 @@ scoreboard players set 1200 consts 1200
 scoreboard players set 20 consts 20
 scoreboard players set 50 consts 50
 scoreboard players set 72000 consts 72000
-scoreboard players set 0 consts 0
-scoreboard players set 1 consts 1
-scoreboard players set 2 consts 2
-scoreboard players set 3 consts 3
-scoreboard players set 4 consts 4
-scoreboard players set 5 consts 5
-scoreboard players set 6 consts 6
-scoreboard players set 7 consts 7
-scoreboard players set 8 consts 8
-scoreboard players set 9 consts 9
-scoreboard players set 10 consts 10
-scoreboard players set 11 consts 11
-scoreboard players set 12 consts 12
+scoreboard players set 3600 consts 3600
 
 # racetrack records
 # FCorp International Circuit: 1:19.2

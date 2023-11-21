@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "joined_the_world": {
+            "trigger": "minecraft:location"
+        }
+    },
+    "rewards": {
+        "function": "fpack:init_new_player"
+    }
+}
