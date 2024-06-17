@@ -46,9 +46,9 @@ scoreboard objectives add show_tp_messages trigger
 scoreboard objectives add dim.last_visited dummy
 
 # dragon fight setup
-bossbar add end2:dragon_fight {"text": "Ender Dragon"}
-bossbar set end2:dragon_fight color pink
-bossbar set end2:dragon_fight visible false
+bossbar add end2:dragon_bossbar {"text": "Ender Dragon"}
+bossbar set end2:dragon_bossbar color pink
+bossbar set end2:dragon_bossbar visible false
 
 # constants
 scoreboard objectives add consts dummy
