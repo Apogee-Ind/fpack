@@ -11,8 +11,10 @@ execute in fpack:end_2 if score EndPillarCounter consts = 8 consts run place jig
 execute in fpack:end_2 if score EndPillarCounter consts = 9 consts run place jigsaw end2:caged_pillar_top empty 5 -13 82 -40
 
 # add the beam to the new end crystal
-execute in fpack:end_2 as @e[type=end_crystal] run data merge entity @s {beam_target:{"X":0, "Y":128, "Z":0}}
+execute in fpack:end_2 as @e[type=end_crystal] run data merge entity @s {beam_target:[I;0, 128, 0]}
 
 # increment the pilconsts and schedule the next loop iteration if not all pillars are complete
 scoreboard players operation EndPillarCounter consts += 1 consts
 execute if score EndPillarCounter consts <= 10 consts run schedule function end2:regen_pillar 2s
+# run the function to summon the dragon and show the bossbar once all pillars are complete
+execute if score EndPillarCounter consts = 10 consts run schedule function end2:summon_dragon 5s
