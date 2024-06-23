@@ -8,4 +8,5 @@ execute in fpack:end_2 run summon tnt -34 88 24 {fuse:0}
 execute in fpack:end_2 run summon tnt -42 85 -1 {fuse:0}
 execute in fpack:end_2 run summon tnt -34 79 -25 {fuse:0}
 execute in fpack:end_2 run summon tnt -13 82 -40 {fuse:0}
-execute in fpack:end_2 run playsound entity.ender_dragon.growl hostile @a 0 60 0 64
+
+execute in fpack:end_2 positioned 0 60 0 as @n[type=minecraft:end_crystal,limit=4] run data merge entity @s {beam_target:[I;12, 100, -40]}
