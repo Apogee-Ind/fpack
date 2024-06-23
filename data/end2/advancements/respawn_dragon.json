@@ -13,7 +13,7 @@
     "parent": "end2:visit_end2",
     "criteria": {
         "placed_end_crystal_1": {
-            "trigger": "minecraft:item_used_on_block",
+            "trigger": "minecraft:any_block_use",
             "conditions": {
                 "location": [
                     {
@@ -44,7 +44,7 @@
             }
         },
         "placed_end_crystal_2": {
-            "trigger": "minecraft:item_used_on_block",
+            "trigger": "minecraft:any_block_use",
             "conditions": {
                 "location": [
                     {
@@ -75,7 +75,7 @@
             }
         },
         "placed_end_crystal_3": {
-            "trigger": "minecraft:item_used_on_block",
+            "trigger": "minecraft:any_block_use",
             "conditions": {
                 "location": [
                     {
@@ -106,7 +106,7 @@
             }
         },
         "placed_end_crystal_4": {
-            "trigger": "minecraft:item_used_on_block",
+            "trigger": "minecraft:any_block_use",
             "conditions": {
                 "location": [
                     {

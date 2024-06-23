@@ -34,8 +34,8 @@ team modify afk.active_team color green
 
 # dummy objectives for death tracking
 scoreboard objectives add tsd.seconds dummy
-scoreboard objectives add tsd dummy
 scoreboard objectives add tsd.hours dummy
+scoreboard objectives add tsd.actual minecraft.custom:time_since_death
 scoreboard objectives setdisplay list tsd.hours
 
 # dummy objectives for XP bottling
@@ -48,7 +48,7 @@ scoreboard objectives add dim.last_visited dummy
 # dragon fight setup
 bossbar add end2:dragon_bossbar {"text": "Ender Dragon"}
 bossbar set end2:dragon_bossbar color pink
-bossbar set end2:dragon_bossbar visible false
+bossbar set end2:dragon_bossbar max 200
 
 # constants
 scoreboard objectives add consts dummy
@@ -65,3 +65,8 @@ scoreboard players set IceBoatRecords boat.best_lap_fc 1584
 scoreboard players set IceBoatRecords boat.best_lap_lv 1803
 # Earthflax Tower Drift Course: Not yet set
 scoreboard players set IceBoatRecords boat.best_lap_ef 72000
+
+# autoclicker control
+scoreboard objectives add player.use trigger
+scoreboard objectives add player.attack trigger
+scoreboard objectives add player.stop trigger
