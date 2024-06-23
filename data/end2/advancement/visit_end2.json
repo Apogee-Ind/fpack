@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:obsidian"
+            "id": "minecraft:obsidian"
         },
         "title": "Wait, there's another one?",
         "description": "Visit End 2 for the first time",
