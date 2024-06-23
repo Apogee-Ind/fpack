@@ -49,6 +49,7 @@ scoreboard objectives add dim.last_visited dummy
 bossbar add end2:dragon_bossbar {"text": "Ender Dragon"}
 bossbar set end2:dragon_bossbar color pink
 bossbar set end2:dragon_bossbar max 200
+bossbar set end2:dragon_bossbar players
 
 # constants
 scoreboard objectives add consts dummy
