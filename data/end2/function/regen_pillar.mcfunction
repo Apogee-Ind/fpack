@@ -39,7 +39,7 @@ execute in fpack:end_2 if score EndPillarCounter consts matches 8 positioned -34
 # pillar 10
 execute in fpack:end_2 if score EndPillarCounter consts matches 9 run place jigsaw end2:caged_pillar_top empty 5 -13 82 -40
 execute in fpack:end_2 if score EndPillarCounter consts matches 9 positioned -13 82 40 as @n[type=minecraft:end_crystal] run data merge entity @s {beam_target:[I;0, 128, 0]}
-
+execute in fpack:end_2 if score EndPillarCounter consts matches 9 positioned 0 60 0 as @n[type=minecraft:end_crystal,limit=4] run data merge entity @s {beam_target:[I;0, 128, 0]}
 # increment the pilconsts and schedule the next loop iteration if not all pillars are complete
 scoreboard players add EndPillarCounter consts 1
 execute if score EndPillarCounter consts matches ..10 run schedule function end2:regen_pillar 2s
