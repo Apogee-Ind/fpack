@@ -3,8 +3,8 @@
         "icon": {
             "id":"minecraft:end_crystal"
         },
-        "title": "Test Dragon Respawn Advancement",
-        "description": "If this appears, you successfully triggered the advancement.",
+        "title": "The Part Where You Kill Her",
+        "description": "Follow Rule Nine and summon the Ender Dragon",
         "frame": "goal",
         "show_toast": false,
         "announce_to_chat": true,
@@ -13,7 +13,7 @@
     "parent": "end2:visit_end2",
     "criteria": {
         "placed_end_crystal_1": {
-            "trigger": "minecraft:any_block_use",
+            "trigger": "minecraft:item_used_on_block",
             "conditions": {
                 "location": [
                     {
@@ -44,7 +44,7 @@
             }
         },
         "placed_end_crystal_2": {
-            "trigger": "minecraft:any_block_use",
+            "trigger": "minecraft:item_used_on_block",
             "conditions": {
                 "location": [
                     {
@@ -75,7 +75,7 @@
             }
         },
         "placed_end_crystal_3": {
-            "trigger": "minecraft:any_block_use",
+            "trigger": "minecraft:item_used_on_block",
             "conditions": {
                 "location": [
                     {
@@ -106,7 +106,7 @@
             }
         },
         "placed_end_crystal_4": {
-            "trigger": "minecraft:any_block_use",
+            "trigger": "minecraft:item_used_on_block",
             "conditions": {
                 "location": [
                     {
