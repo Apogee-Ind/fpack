@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:obsidian"
+        },
+        "title": "Wait, there's another one?",
+        "description": "Visit End 2 for the first time",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:end/root",
+    "criteria": {
+        "entered_end_2": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "from": "minecraft:the_end",
+                "to": "fpack:end_2"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}
