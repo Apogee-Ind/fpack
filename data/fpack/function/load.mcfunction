@@ -24,19 +24,26 @@ scoreboard objectives add afk.z0 dummy
 scoreboard objectives add afk.z1 dummy
 scoreboard objectives add afk.y0 dummy
 scoreboard objectives add afk.y1 dummy
-scoreboard objectives add afk.counter dummy
 
 team add afk.afk_team "AFK Players"
-team modify afk.afk_team color dark_aqua
+team modify afk.afk_team color dark_gray
 team modify afk.afk_team prefix "[AFK] "
-team add afk.active_team "Active Players"
-team modify afk.active_team color green
+team add afk.hab1 "Habitual 1"
+team modify afk.hab1 color aqua
+team add afk.hab2 "Habitual 2"
+team modify afk.hab2 color green
+team add afk.hab3 "Habitual 3"
+team modify afk.hab3 color blue
+team add afk.hab4 "Cyberman"
+team modify afk.hab4 color dark_blue
 
-# dummy objectives for death tracking
+# dummy objectives for time tracking
 scoreboard objectives add tsd.seconds dummy
 scoreboard objectives add tsd.hours dummy
 scoreboard objectives add tsd.actual minecraft.custom:time_since_death
 scoreboard objectives setdisplay list tsd.hours
+scoreboard objectives add playtime.seconds dummy
+scoreboard objectives add playtime.hours dummy
 
 # dummy objectives for XP bottling
 scoreboard objectives add xp.count xp

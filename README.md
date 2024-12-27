@@ -13,18 +13,21 @@ End 2 is a clone of Ice Boat SMP's end dimension as it existed just prior to the
 
 ### Fpack Core
 The `fpack` namespace contains several utility and convenience functions. 
-1. Time Since Death leaderboard: Does what the name suggests. Your time since death in hours appears on the tab screen by default. The TSD scoreboard does not count time spent AFK.
-2. AFK Detector: Displays a chat message and prepends \[AFK\] to a player's name when they don't move for at least 2.5 minutes.
+1. Playtime tracking & role management
+    a. Determines if you're away from keyboard/not moving (AFK)
+    b. Tracks your playtime and how long it's been since you died, exlcuding AFK time
+    c. Assigns a score for the appropriate playtime role to be awarded in the next month
+    d. Assigns teams and sends chat messages to communicate AFK status
+2. Server Currency (Cryo):
+    a. Distributes playtime-based Cryo to players based on their role
+    b. OP-accessible functions for creating, destroying, compacting, and de-compacting Cryo
 3. XP Bottling: Stand on an enchanting table to convert your XP into Bottles o' Enchanting.
+4. Dimension change messages & End Hub teleporters: Send messages in chat when players change dimensions.
 Scheduled functions (running every second, or at other intervals) are contained in the `fpack` namespace.
 
 ### Ice Boat
 The `iceboat` namespace contains everything needed to set up lap/sector timers, track limits detection, track records, and other features for ice boat racetracks. Most of the functions in this module must be called by command blocks placed in the world. Each of these functions contains a comment with the command needed to call it.
 
-## New in Version 2.2 (for Minecraft 1.19.4, datapack version 13)
-1. Lap deltas: game will now display your delta from the previous lap above your hotbar when you complete a lap
-2. Variable sector count: the expected sector count is now controlled by the calling command block, meaning you can have an arbitrary number
-3. Added AFK detector
-4. Hours since death scoreboard will no longer include AFK time
-5. Removed ticking functions in favor of `schedule`. The hours since death scoreboard now updates every second.
+## New in Version 61.0 (for Minecraft 1.21.4)
+1. 
 

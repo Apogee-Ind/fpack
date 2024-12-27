@@ -2,6 +2,7 @@
     "values": [
         "fpack:load",
         "fpack:second",
-        "fpack:threeticks"
+        "fpack:threeticks",
+        "fpack:two_minutes"
     ]
 }
