@@ -28,14 +28,14 @@ scoreboard objectives add afk.y1 dummy
 team add afk.afk_team "AFK Players"
 team modify afk.afk_team color dark_gray
 team modify afk.afk_team prefix "[AFK] "
-team add afk.hab1 "Habitual 1"
-team modify afk.hab1 color aqua
-team add afk.hab2 "Habitual 2"
-team modify afk.hab2 color green
-team add afk.hab3 "Habitual 3"
-team modify afk.hab3 color blue
-team add afk.hab4 "Cyberman"
-team modify afk.hab4 color dark_blue
+team add Boater "Boater"
+team modify Boater color aqua
+team add Frostwalker "Frostwalker"
+team modify Frostwalker color green
+team add Voidrifter "Voidrifter"
+team modify Voidrifter color blue
+team add Cyberman "Cyberman"
+team modify Cyberman color dark_blue
 
 # dummy objectives for time tracking
 scoreboard objectives add tsd.seconds dummy
