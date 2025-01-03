@@ -31,17 +31,17 @@ team modify afk.afk_team prefix "[AFK] "
 team add Boater "Boater"
 team modify Boater color aqua
 team add Frostwalker "Frostwalker"
-team modify Frostwalker color green
+team modify Frostwalker color dark_aqua
 team add Voidrifter "Voidrifter"
 team modify Voidrifter color blue
 team add Cyberman "Cyberman"
-team modify Cyberman color dark_blue
+team modify Cyberman color gray
 
 # dummy objectives for time tracking
 scoreboard objectives add tsd.seconds dummy
 scoreboard objectives add tsd.hours dummy
 scoreboard objectives add tsd.actual minecraft.custom:time_since_death
-scoreboard objectives setdisplay list tsd.hours
+scoreboard objectives setdisplay list playtime.hours
 scoreboard objectives add playtime.seconds dummy
 scoreboard objectives add playtime.hours dummy
 scoreboard objectives add playtime.init dummy
