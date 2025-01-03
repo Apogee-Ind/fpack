@@ -44,6 +44,7 @@ scoreboard objectives add tsd.actual minecraft.custom:time_since_death
 scoreboard objectives setdisplay list tsd.hours
 scoreboard objectives add playtime.seconds dummy
 scoreboard objectives add playtime.hours dummy
+scoreboard objectives add playtime.init dummy
 
 # dummy objectives for XP bottling
 scoreboard objectives add xp.count xp
@@ -73,8 +74,3 @@ scoreboard players set IceBoatRecords boat.best_lap_fc 1584
 scoreboard players set IceBoatRecords boat.best_lap_lv 1803
 # Earthflax Tower Drift Course: Not yet set
 scoreboard players set IceBoatRecords boat.best_lap_ef 72000
-
-# autoclicker control
-scoreboard objectives add player.use trigger
-scoreboard objectives add player.attack trigger
-scoreboard objectives add player.stop trigger
