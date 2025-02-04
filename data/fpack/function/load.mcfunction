@@ -29,13 +29,13 @@ team add afk.afk_team "AFK Players"
 team modify afk.afk_team color dark_gray
 team modify afk.afk_team prefix "[AFK] "
 team add Boater "Boater"
-team modify Boater color aqua
+team modify Boater color gray
 team add Frostwalker "Frostwalker"
-team modify Frostwalker color dark_aqua
+team modify Frostwalker color aqua
 team add Voidrifter "Voidrifter"
-team modify Voidrifter color blue
+team modify Voidrifter color dark_aqua
 team add Cyberman "Cyberman"
-team modify Cyberman color gray
+team modify Cyberman color blue
 
 # dummy objectives for time tracking
 scoreboard objectives add tsd.seconds dummy
