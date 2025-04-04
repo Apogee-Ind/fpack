@@ -4,4 +4,4 @@ tag @s remove Frostwalker
 tag @s remove Voidrifter
 tag @s remove Cyberman
 $tag @s add $(role)
-$tellraw @a [{"text":"With "},{"score":{"name":"@s", "objective":"playtime.hours"} },{"text":" hours of playtime, "},{"selector":"@s"},{"text":" has attained the rank of "},{"text":"$(role)!"}]
+$tellraw @a ["With ",{"score":{"name":"@s", "objective":"playtime.hours"} }," hours of playtime, ",{"selector":"@s"}," has attained the rank of $(role)"]
