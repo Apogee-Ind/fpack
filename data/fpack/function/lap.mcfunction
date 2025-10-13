@@ -5,6 +5,8 @@ scoreboard players add @s boat.sector_counter 1
 execute as @s[scores={boat.valid_lap=1,boat.show_sector_time=1}] run function fpack:get_sector_time
 # run lap time calculator/display if lap is valid
 execute as @s[scores={boat.valid_lap=1}] run function fpack:get_laptime
+# run lap delta calculator if lap is valid
+execute as @s[scores={boat.valid_lap=1,boat.show_deltas=1}] run function fpack:get_lap_delta
 # reset lap/sector completion
 scoreboard players set @s boat.valid_lap 1
 scoreboard players set @s boat.sector_counter 0
