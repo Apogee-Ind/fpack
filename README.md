@@ -1,11 +1,14 @@
 # fpack
-Core datapack of the Ice Boat SMP.
+_Core datapack of the Ice Boat SMP._
 Fpack is the work of Frijoles_, with contributions from authors of Vanilla Tweaks, *insert other packs here*
 
 This datapack is an agglomeration of multiple namespaced modules that, while functionally independent, share some code related to loading and ticking functions. For that reason, only certain folders can be deleted by users who only want part of fpack's functionality. The modules are as follows:
 * `data/end2`
 * `data/fpack`
 * `data/iceboat`
+
+Currently for just implementing banners
+* `data/reishards`
 
 ## Module Description
 ### End 2
@@ -27,4 +30,9 @@ The `iceboat` namespace contains everything needed to set up lap/sector timers, 
 3. Added AFK detector
 4. Hours since death scoreboard will no longer include AFK time
 5. Removed ticking functions in favor of `schedule`. The hours since death scoreboard now updates every second.
+
+## reishards
+1. datapack for custom banner pattern.
+
+See the [IPSMP_resource_pack repository](https://github.com/Apogee-Ind/IPSMP_resource_pack) for more details.
 
