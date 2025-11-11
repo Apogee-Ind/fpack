@@ -1,60 +1,13 @@
-biome features go like this:
+tracking playtime:
+run every second
+check if afk
+if not afk, add 1 to playtime
+if not afk, add 1 to time since death
+if actual time since death is less than 40 ticks ago, set time since death to 0
+convert both from seconds to hours
 
-1. RAW_GENERATION (mini end islands)
-2. LAKES
-3. LOCAL_MODIFICATION (rocks & icebergs)
-4. UNDERGROUND_STRUCTURES (dungeons, fossils)
-5. SURFACE_STRUCTURES (desert wells, blue ice)
-6. STRONGHOLDS (not used)
-7. UNDERGROUND_ORES
-8. UNDERGROUND_DECORATION (infested blocks)
-9. VEGETAL_DECORATION (trees, flowers, etc)
-10. TOP_LAYER_MODIFICATION (surface freezing)
+tag for each role?
 
-categories:
-none, taiga, extreme_hills, jungle, mesa, plains, savanna, icy, the_end, beach, forest, ocean, desert, river, swamp, mushroom, nether
+need function to reset all players (including offline players) at the start of every month
+before reset, value of each player's role needs to be read and used to update their role if necessary
 
-surface builders:
-default, mountain, shattered_savanna, gravelly_mountain, giant_tree_taiga, swamp, badlands, wooded_badlands, eroded_badlands, frozen_ocean, nether, nether_forest, soul_sand_valley, basalt_deltas, nope
-
-[('desert', [0.8, -0.6]),  
-('tree_savanna', [0.75, 0.3]),
-('grass_savanna', [0.65, 0.0]),
-('rainforest_edge', [0.3, 0.9]),
-('swamp', [-0.1, 0.8]),
-('plains', [0.0, -0.6]),
-('steppe', [-0.3, -0.6]), 
-('shrubland', [0.4, -0.2]),
-('arid_shrubland', [0.5, -0.6]), 
-('woodland', [-0.1, 0.2]),
-('temp_forest', [-0.5, 0.4]),
-('temp_rainforest', [-0.6, 0.9]),
-('taiga', [-0.6, 0.0]),
-('frozen_taiga', [-0.9, -0.4]),
-('tundra', [-0.7, -0.7]),
-('rainforest', [0.75, 0.75]),
-('dark_forest', [0.2, 0.5])]
-
-[('desert', [0.64, -0.36]),  
-('tree_savanna', [0.56, 0.09]),
-('grass_savanna', [0.43, 0.0]),
-('rainforest_edge', [0.3, 0.6]),
-('swamp', [-0.09, 0.36]),
-('plains', [-0.04, -0.25]),
-('steppe', [-0.16, -0.36]), 
-('shrubland', [0.16, -0.16]),
-('arid_shrubland', [0.2, -0.36]), 
-('woodland', [-0.09, 0.09]),
-('temp_forest', [-0.25, 0.16]),
-('temp_rainforest', [-0.36, 0.75]),
-('taiga', [-0.36, 0.0]),
-('frozen_taiga', [-0.81, -0.16]),
-('tundra', [-0.49, -0.49]),
-('rainforest', [0.5, 0.56]),
-('dark_forest', [0.01, 0.36])]
-
-Advancements to add:
-1. Enter End 2
-2. Travel through all End Hub connections
-3. Set a World Record on any ice boat track
-4. 

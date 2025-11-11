@@ -1,0 +1,8 @@
+{
+    "description": {
+        "text": "This relic plays a sound when used."
+    },
+    "range": 64,
+    "sound_event": "minecraft:entity.lightning_bolt.thunder",
+    "use_duration": 7
+}

@@ -2,4 +2,4 @@
 # execute as @p run function fpack:track_limits
 
 scoreboard players set @s boat.valid_lap 0
-tellraw @s [{"text":"Track limits exceeded! Laptime deleted."}]
+tellraw @s "Track limits exceeded! Laptime deleted."

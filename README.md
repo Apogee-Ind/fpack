@@ -1,11 +1,10 @@
 # fpack
-_Core datapack of the Ice Boat SMP._
-Fpack is the work of Frijoles_, with contributions from authors of Vanilla Tweaks, *insert other packs here*
+Core datapack of the Ice Boat SMP.
+Fpack is the work of Frijoles_, with contributions from authors of Vanilla Tweaks and members of the Ice Boat SMP.
 
 This datapack is an agglomeration of multiple namespaced modules that, while functionally independent, share some code related to loading and ticking functions. For that reason, only certain folders can be deleted by users who only want part of fpack's functionality. The modules are as follows:
 * `data/end2`
 * `data/fpack`
-* `data/iceboat`
 
 Currently for just implementing banners
 * `data/reishards`
@@ -16,20 +15,34 @@ End 2 is a clone of Ice Boat SMP's end dimension as it existed just prior to the
 
 ### Fpack Core
 The `fpack` namespace contains several utility and convenience functions. 
-1. Time Since Death leaderboard: Does what the name suggests. Your time since death in hours appears on the tab screen by default. The TSD scoreboard does not count time spent AFK.
-2. AFK Detector: Displays a chat message and prepends \[AFK\] to a player's name when they don't move for at least 2.5 minutes.
-3. XP Bottling: Stand on an enchanting table to convert your XP into Bottles o' Enchanting.
+1. Playtime tracking & role management
+    a. Determines if you're away from keyboard/not moving (AFK)
+    b. Tracks your playtime and how long it's been since you died, exlcuding AFK time
+    c. Assigns a score for the appropriate playtime role to be awarded in the next month
+    d. Assigns teams and sends chat messages to communicate AFK status
+2. XP Bottling: Stand on an enchanting table to convert your XP into Bottles o' Enchanting.
+3. Dimension change messages & End Hub teleporters: Send messages in chat when players change dimensions.
 Scheduled functions (running every second, or at other intervals) are contained in the `fpack` namespace.
+4. Ice Boating:
+    a. Lap/sector timers for racetracks
+    b. Track limits detection
+    c. Most of the functions in this module must be called by command blocks placed in the world. Each of these functions contains a comment with the command needed to call it.
+5. Support for certain custom item features
+    a. Custom banner patterns, as added by contributors to the IBSMP resource pack
+    b. Custom jukebox songs, instruments, paintings, and other data-driven elements
 
-### Ice Boat
-The `iceboat` namespace contains everything needed to set up lap/sector timers, track limits detection, track records, and other features for ice boat racetracks. Most of the functions in this module must be called by command blocks placed in the world. Each of these functions contains a comment with the command needed to call it.
+## Contributing to Fpack
+Fpack is a public repository and you are free to create forks. If you would like collaborator access to the main shared repo, please contact Frijoles_.
+Any changes to this repo do not automatically go to the Minecraft server. In order to push an updated datapack to the server, please contact an admin.
 
-## New in Version 2.2 (for Minecraft 1.19.4, datapack version 13)
-1. Lap deltas: game will now display your delta from the previous lap above your hotbar when you complete a lap
-2. Variable sector count: the expected sector count is now controlled by the calling command block, meaning you can have an arbitrary number
-3. Added AFK detector
-4. Hours since death scoreboard will no longer include AFK time
-5. Removed ticking functions in favor of `schedule`. The hours since death scoreboard now updates every second.
+If you'd like to test Fpack in singleplayer, please do the following:
+1. Select all contents within the repo directory (data, pack.mcmeta, etc), right click, and send to compressed/zipped folder.
+2. Cut and paste the newly created zip into the datapacks directory of the specific save (single player world) you'd like to add the datapack to
+3. Please do not commit zip files to the repo
+
+## New in Version 88.0 (for Minecraft 1.21.10)
+1. Custom item data for Maze of Madness
+2. Fixes to lap delta display
 
 ## reishards
 1. datapack for custom banner pattern.

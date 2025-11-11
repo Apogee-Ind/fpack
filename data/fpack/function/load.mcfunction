@@ -24,19 +24,27 @@ scoreboard objectives add afk.z0 dummy
 scoreboard objectives add afk.z1 dummy
 scoreboard objectives add afk.y0 dummy
 scoreboard objectives add afk.y1 dummy
-scoreboard objectives add afk.counter dummy
 
 team add afk.afk_team "AFK Players"
-team modify afk.afk_team color dark_aqua
+team modify afk.afk_team color dark_gray
 team modify afk.afk_team prefix "[AFK] "
-team add afk.active_team "Active Players"
-team modify afk.active_team color green
+team add Boater "Boater"
+team modify Boater color gray
+team add Frostwalker "Frostwalker"
+team modify Frostwalker color aqua
+team add Voidrifter "Voidrifter"
+team modify Voidrifter color dark_aqua
+team add Cyberman "Cyberman"
+team modify Cyberman color blue
 
-# dummy objectives for death tracking
+# dummy objectives for time tracking
 scoreboard objectives add tsd.seconds dummy
 scoreboard objectives add tsd.hours dummy
 scoreboard objectives add tsd.actual minecraft.custom:time_since_death
-scoreboard objectives setdisplay list tsd.hours
+scoreboard objectives setdisplay list playtime.hours
+scoreboard objectives add playtime.seconds dummy
+scoreboard objectives add playtime.hours dummy
+scoreboard objectives add playtime.init dummy
 
 # dummy objectives for XP bottling
 scoreboard objectives add xp.count xp
@@ -66,8 +74,3 @@ scoreboard players set IceBoatRecords boat.best_lap_fc 1584
 scoreboard players set IceBoatRecords boat.best_lap_lv 1803
 # Earthflax Tower Drift Course: Not yet set
 scoreboard players set IceBoatRecords boat.best_lap_ef 72000
-
-# autoclicker control
-scoreboard objectives add player.use trigger
-scoreboard objectives add player.attack trigger
-scoreboard objectives add player.stop trigger
