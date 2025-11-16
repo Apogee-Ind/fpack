@@ -10,6 +10,7 @@ Currently for just implementing banners
 * `data/reishards`
 
 ## Module Description
+
 ### End 2
 End 2 is a clone of Ice Boat SMP's end dimension as it existed just prior to the 1.18 update. End 2 was created as a place for Dragon fights, Wither killing, and End City raiding that wouldn't interfere with or damage the new End Hub, located in the vanilla End dimension. Prior to 1.19, the Ender Dragon re-summoning process worked normally in any End-type dimension. However, this no longer is the case. To allow the End Hub to remain in the vanilla End dimension, fpack implements a re-creation of the Dragon fight sequence in End 2, accessed via the normal re-summoning mechanic. The `end2` namespace contains the files related to the Dragon fight. For backwards compatibility reasons, End 2's dimension file is stored under the `fpack` namespace.
 
@@ -31,6 +32,15 @@ Scheduled functions (running every second, or at other intervals) are contained 
     a. Custom banner patterns, as added by contributors to the IBSMP resource pack
     b. Custom jukebox songs, instruments, paintings, and other data-driven elements
 
+### minecraft
+The `minecraft` namespace is used for globally modifying the base assets.
+
+### reishards
+The `reishards` namespace is for assets made by Rei Shards.  Currently only banner patterns are added.
+1. datapack for custom banner pattern.
+
+See the [IPSMP_resource_pack repository](https://github.com/Apogee-Ind/IPSMP_resource_pack) for more details.
+
 ## Contributing to Fpack
 Fpack is a public repository and you are free to create forks. If you would like collaborator access to the main shared repo, please contact Frijoles_.
 Any changes to this repo do not automatically go to the Minecraft server. In order to push an updated datapack to the server, please contact an admin.
@@ -44,8 +54,4 @@ If you'd like to test Fpack in singleplayer, please do the following:
 1. Custom item data for Maze of Madness
 2. Fixes to lap delta display
 
-## reishards
-1. datapack for custom banner pattern.
-
-See the [IPSMP_resource_pack repository](https://github.com/Apogee-Ind/IPSMP_resource_pack) for more details.
 
