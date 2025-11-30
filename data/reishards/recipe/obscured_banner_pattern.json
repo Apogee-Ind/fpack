@@ -1,15 +1,32 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        "minecraft:echo_shard",
-        "minecraft:paper"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "minecraft:paper"
     ],
-    "result": {
-        "id": "minecraft:paper",
-        "components": {
-            "minecraft:provides_banner_patterns": "#reishards:obscured_pattern_tag",
-            "minecraft:custom_model_data": {"floats": [711]}
-        },
-        "count": 1
-    }
+    [
+      "minecraft:echo_shard"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "components": {
+      "minecraft:item_name": "Obscured Banner Pattern",
+      "minecraft:rarity": "uncommon",
+      "minecraft:max_stack_size": 1,
+      "minecraft:lore": [
+        {
+          "text": "One side is not like the other.",
+          "color": "#2c2332"
+        }
+      ],
+      "minecraft:provides_banner_patterns": "#reishards:obscured_pattern_tag",
+      "minecraft:custom_model_data": {
+        "floats": [
+          711
+        ]
+      }
+    },
+    "count": 1
+  }
 }
