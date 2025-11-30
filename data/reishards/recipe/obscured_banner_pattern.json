@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:echo_shard",
+        "minecraft:paper"
+    ],
+    "result": {
+        "id": "minecraft:paper",
+        "components": {
+            "minecraft:provides_banner_patterns": "#reishards:obscure_reverse_pattern_tag",
+            "minecraft:custom_model_data": {"floats": [711]}
+        },
+        "count": 1
+    }
+}
