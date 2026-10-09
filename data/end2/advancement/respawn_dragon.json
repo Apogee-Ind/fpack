@@ -15,125 +15,101 @@
         "placed_end_crystal_1": {
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "minecraft:location_check",
-                        "predicate": {
-                            "dimension": "fpack:end_2",
-                            "position": {
-                                "x": 0.5,
-                                "y": 60.5,
-                                "z": 3.5
-                            },
-                            "block": {
-                                "blocks": [
-                                    "minecraft:bedrock"
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "items": [
-                                "minecraft:end_crystal"
-                            ]
+                "player": {
+                    "type": "minecraft:match_tool",
+                    "predicate": {
+                        "items": "minecraft:end_crystal"
+                    }
+                },
+                "location": {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                        "position": {
+                            "x": 0.5,
+                            "y": 60.5,
+                            "z": 3.5
+                        },
+                        "dimension": "fpack:end_2",
+                        "block": {
+                            "blocks": "minecraft:bedrock"
                         }
                     }
-                ]
+                }
             }
         },
         "placed_end_crystal_2": {
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "minecraft:location_check",
-                        "predicate": {
-                            "dimension": "fpack:end_2",
-                            "position": {
-                                "x": 0.5,
-                                "y": 60.5,
-                                "z": -2.5
-                            },
-                            "block": {
-                                "blocks": [
-                                    "minecraft:bedrock"
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "items": [
-                                "minecraft:end_crystal"
-                            ]
+                "player": {
+                    "type": "minecraft:match_tool",
+                    "predicate": {
+                        "items": "minecraft:end_crystal"
+                    }
+                },
+                "location": {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                        "position": {
+                            "x": 0.5,
+                            "y": 60.5,
+                            "z": -2.5
+                        },
+                        "dimension": "fpack:end_2",
+                        "block": {
+                            "blocks": "minecraft:bedrock"
                         }
                     }
-                ]
+                }
             }
         },
         "placed_end_crystal_3": {
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "minecraft:location_check",
-                        "predicate": {
-                            "dimension": "fpack:end_2",
-                            "position": {
-                                "x": -2.5,
-                                "y": 60.5,
-                                "z": 0.5
-                            },
-                            "block": {
-                                "blocks": [
-                                    "minecraft:bedrock"
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "items": [
-                                "minecraft:end_crystal"
-                            ]
+                "player": {
+                    "type": "minecraft:match_tool",
+                    "predicate": {
+                        "items": "minecraft:end_crystal"
+                    }
+                },
+                "location": {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                        "position": {
+                            "x": -2.5,
+                            "y": 60.5,
+                            "z": 0.5
+                        },
+                        "dimension": "fpack:end_2",
+                        "block": {
+                            "blocks": "minecraft:bedrock"
                         }
                     }
-                ]
+                }
             }
         },
         "placed_end_crystal_4": {
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "minecraft:location_check",
-                        "predicate": {
-                            "dimension": "fpack:end_2",
-                            "position": {
-                                "x": 3.5,
-                                "y": 60.5,
-                                "z": 0.5
-                            },
-                            "block": {
-                                "blocks": [
-                                    "minecraft:bedrock"
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "items": [
-                                "minecraft:end_crystal"
-                            ]
+                "player": {
+                    "type": "minecraft:match_tool",
+                    "predicate": {
+                        "items": "minecraft:end_crystal"
+                    }
+                },
+                "location": {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                        "position": {
+                            "x": 3.5,
+                            "y": 60.5,
+                            "z": 0.5
+                        },
+                        "dimension": "fpack:end_2",
+                        "block": {
+                            "blocks": "minecraft:bedrock"
                         }
                     }
-                ]
+                }
             }
         }
     },
