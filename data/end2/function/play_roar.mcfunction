@@ -1,1 +1,0 @@
-execute in fpack:end_2 run playsound entity.ender_dragon.growl hostile @a 0 60 0 64
